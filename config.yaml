@@ -1,7 +1,7 @@
 items:
   - name: 2
     args: |-
-       /opt/homebrew/bin/lftp sftp://'toyota_grandprix:$339STMn7q6$Q@185.21.42.176' -e " ls; bye;"
+       ls -al .
   - name: 4
     args: |-
       sleep 4

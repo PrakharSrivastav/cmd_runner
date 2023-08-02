@@ -66,6 +66,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "cmd_runner"
+version = "0.1.0"
+dependencies = [
+ "log",
+ "serde",
+ "serde_yaml",
+ "structured-logger",
+]
+
+[[package]]
 name = "equivalent"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -212,16 +222,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "567664f262709473930a4bf9e51bf2ebf3348f2e748ccc50dea20646858f8f29"
 dependencies = [
  "bitflags",
-]
-
-[[package]]
-name = "rest_tutorial"
-version = "0.1.0"
-dependencies = [
- "log",
- "serde",
- "serde_yaml",
- "structured-logger",
 ]
 
 [[package]]

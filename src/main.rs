@@ -1,6 +1,6 @@
 use serde::Deserialize;
-use std::process::Command;
 use std::io::stdout;
+use std::process::Command;
 use structured_logger::{json::new_writer, Builder};
 
 fn main() {
@@ -21,7 +21,8 @@ fn main() {
             .arg(cfg.items[idx].args.as_str())
             .output()
             .map(|op| log::info!("results is {}", op.status.to_string()))
-            .map_err(|err| log::error!("failed to run {}", err)).ok();
+            .map_err(|err| log::error!("failed to run {}", err))
+            .ok();
 
         idx += 1;
     }
@@ -37,11 +38,11 @@ fn setup_logger() {
 
 #[derive(Debug, Deserialize)]
 struct Config {
-    items: Vec<item>,
+    items: Vec<Item>,
 }
 
 #[derive(Debug, Deserialize)]
-struct item {
+struct Item {
     name: String,
     args: String,
 }
