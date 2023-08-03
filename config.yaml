@@ -4,10 +4,10 @@ items:
        ls -al .
   - name: 4
     args: |-
-      sleep 4
+      sleep 2
   - name: 6
     args: |-
-      sleep 6
+      sleep 2
   - name: 8
     args: |-
-      sleep 8
+      sleep 2
