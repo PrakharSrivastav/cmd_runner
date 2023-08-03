@@ -31,3 +31,10 @@ Scenarios: Values can be moved and ownership can change in below scenarios
 1. Variable assignment - if var is on heap or scope changes
 2. Funcs - if var is on heap or scope changes
 3. Funcs with return types - if var is on heap or scope changes
+
+## rust borrowing
+- borrow to use a ref.
+- by default borrow is read only.
+- can borrow immutable ref multiple times.
+- can also borrow mutable ref, but cant use these refs simultaneously to prevent data race.
+- can not have both mut and immut ref on same var within same scope.
