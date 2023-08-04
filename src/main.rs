@@ -7,9 +7,9 @@ mod borrowing;
 
 fn main() {
     setup::logger();
-    borrowing::mutable_ref();
-    borrowing::combine_mut_unmut_ref();
-    //borrowing::run();
+    // borrowing::mutable_ref();
+    // borrowing::combine_mut_unmut_ref();
+    // borrowing::run();
     // ownership::vars();
     // ownership::func_with_return();
     // ownership::func_without_return();
@@ -17,7 +17,6 @@ fn main() {
     // basic::run_conditionals();
     // basic::run_functions();
     // basic::run_variables();
-
     // guess::run();
     // cmd::run();
 }

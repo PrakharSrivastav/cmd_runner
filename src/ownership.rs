@@ -1,7 +1,7 @@
 #[allow(dead_code)]
 pub fn vars() {
     // All primitive datatypes and their copies are pushed onto the stack.
-    // This is because of their know size at compile time, unlike growable
+    // This is because of their known size at compile time, unlike growable
     // vars like String, that must be allocated on heap.
     let s = "hello"; // allocated on stack
     let z = s;
