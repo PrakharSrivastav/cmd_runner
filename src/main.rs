@@ -7,10 +7,14 @@ mod borrowing;
 mod slices;
 mod structure;
 mod enumeration;
+mod optional;
+mod coll;
 
 fn main() {
     setup::logger();
-    enumeration::run();
+    coll::run();
+    //optional::run();
+    // enumeration::run();
     // structure::area_rectangle();
     // structure::basic();
     // slices::array();

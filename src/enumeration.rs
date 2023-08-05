@@ -19,12 +19,14 @@ enum IpAddrString {
     V6(String),
 }
 
+#[allow(dead_code)]
 impl IpAddrString {
     fn print(&self) {
         log::info!("IpAddrString is {:?}",self)
     }
 }
 
+#[allow(dead_code)]
 pub fn run() {
     let v4 = IpAddrKind::V4;
     let v6 = IpAddrKind::V6;
