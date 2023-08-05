@@ -4,9 +4,17 @@ mod guess;
 mod setup;
 mod ownership;
 mod borrowing;
+mod slices;
+mod structure;
+mod enumeration;
 
 fn main() {
     setup::logger();
+    enumeration::run();
+    // structure::area_rectangle();
+    // structure::basic();
+    // slices::array();
+    // slices::run();
     // borrowing::mutable_ref();
     // borrowing::combine_mut_unmut_ref();
     // borrowing::run();

@@ -54,6 +54,7 @@ pub fn mutable_ref() {
 */
 #[allow(dead_code)]
 pub fn combine_mut_unmut_ref() {
+    #[allow(unused_mut)]
     let mut s = String::from("hello");
 
     let r1 = &s; // no problem
